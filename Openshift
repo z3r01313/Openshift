@@ -1,0 +1,32 @@
+What is Openshift and why we need Openshift?
+
+Openshift known as Red Hat Openshift Container Platform (RHOCP) is a One-Stop-Shop product from Red Hat. It provides a unified solution for continuous integration & continuous delivery.
+It integrates multiple tools and technologies for flawless execution of CI/CD pipelines.
+RHOCP can do almost everything from code management to build, test and deployment - RHOCP can do it all!
+
+
+Is RHOCP the future - can it replace tools like Jenkins?
+
+RHOCP is a strong contender to Jenkins when it comes to container platform however, RHOCP has severe limitations in cloud or virtualization world.
+
+
+Architecture of RHOCP
+
+RHOCP is positioned as a container management platform where it provides the abstraction layer for smooth communication between the user and the containers.
+Behind the scenes, RHOCP manages Podman - a daemon-less platform which provides resilience, speed and security.
+Its container communicate directly with runtime-C (runc module) which makes it faster than docker.
+
+
+Try Podman on your local machine
+
+$ dnf module install container-tools
+
+
+
+Some basic commands of Podman which are alike docker
+
+$ podman ps
+
+$ podman images
+
+$ podman pull ubuntu:14.04
